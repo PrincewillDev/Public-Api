@@ -8,7 +8,7 @@ from datetime import datetime
 
 # Create your views here.
 @api_view(["GET"])
-def student_details(request):
+def intern_details(request):
     data = {
         "email": "princewillfidelis1@gmail.com",
         "current_datetime": datetime.now().isoformat(),

@@ -58,10 +58,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGIN = [
-    "https://example.com",
-    "https://sub.example.com",
-    "http://localhost:8080",
-    "http://127.0.0.1:9000",
+    "https://public-api-yk9l.onrender.com"
 ]
 
 ROOT_URLCONF = 'backend.urls'

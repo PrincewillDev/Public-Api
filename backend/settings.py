@@ -26,11 +26,7 @@ SECRET_KEY = 'django-insecure-!urw_j19##ol5suu5#b0aq#7xb7$-y+-sn3ywoumpz&@&wb(q2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    '127.0.0.1',
-    'localhost',
-    'public-api-yk9l.onrender.com'
-]
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -57,9 +53,11 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ALLOWED_ORIGIN = [
-    "https://public-api-yk9l.onrender.com"
-]
+# CORS_ALLOWED_ORIGIN = [
+#     "https://public-api-yk9l.onrender.com"
+# ]
+
+CORS_ALLOW_ALL_ORIGINS = True
 
 ROOT_URLCONF = 'backend.urls'
 
